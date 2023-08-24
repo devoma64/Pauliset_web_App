@@ -1,0 +1,240 @@
+
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <link rel="icon" href=" {% static  './images/pauliset-logo.png' %}">
+
+   <title>Pauliset Agro Company</title>
+   <!-- CSS FILES START -->
+   <link href="{% static './css/custom.css' %}" rel="stylesheet">
+   <link href="{% static './css/color.css' %}" rel="stylesheet">
+   <link href="{% static './css/responsive.css' %}" rel="stylesheet">
+   <link href="{% static './css/owl.carousel.min.css' %}" rel="stylesheet">
+   <link href="{% static './css/bootstrap.min.css' %}" rel="stylesheet">
+   <link href="{% static './css/prettyPhoto.css' %}" rel="stylesheet">
+   <link href="{% static './css/all.min.css' %}" rel="stylesheet">
+   <!-- CSS FILES End -->
+</head>
+
+<body>
+   <!-- <div class="wrapper home2"> -->
+      <!--Header Start-->
+      <header class="header">
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand ml-lg-5" href="/"><img src=" {% static './images/pauliset-logo.png' %}" width="50px" height="50px"alt="pauliset company logo"style="margin-left: 2rem;"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <i
+                  class="fas fa-bars"></i> 
+               </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+               <ul class="navbar-nav ml-lg-5 mb-2 mb-lg-0">
+                  <li class="nav-item px-2">
+                     <a class="nav-link fw-medium active" aria-current="page" href="/" data-lik>Home</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link fw-medium active" aria-current="page" href="/about" data-link>About</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link fw-medium active" aria-current="page" href="/products" data-link>Products</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link fw-medium active" aria-current="page" href="/services" data-link>Services</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link fw-medium" href="/testimonies" data-link>Testimonial</a>
+                  </li>
+                  <li class="nav-item px-3">
+                     <a class="nav-link fw-medium" href="/contacts" data-link>Contacts</a>
+                  </li>
+               </ul>
+
+            </div>
+            <div class="row">
+               <div class="col-12 col-6-lg">
+                  <ul class="nav navbar-nav navbar-right ">
+                     <li>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                           Become a factor/supplier today!
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                           aria-labelledby="exampleModalLabel" aria-hidden="true">
+                           <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                 <div class="modal-header">
+                                    <h5 class="modal-title lead b" id="exampleModalLabel">BECOME FACTOR/SUPPLIER</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                       <span aria-hidden="true" class="btn btn-danger"> Not Interested &times;</span>
+                                    </button>
+                                 </div>
+                                 <div class="modal-body">
+                                    coming soon...
+                                 </div>
+                                 <div class="modal-footer text-center">
+                                    <!-- <button type="button" class="btn btn-danger" data-dismiss="modal">Not Interested</button> -->
+                                    <button type="button" class="btn btn-success">Sign up</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>   
+
+      {% block content %}
+
+      {% endblock content %}
+
+      <!--Footer Start-->
+      <footer class="footer" style="background-image: url('/static/images/footer-bg.png');">
+         <div class="footer-top wf100">
+            <div class="container">
+               <div class="row justify-content-lg-between min-vh-75" style="padding-top:21rem">
+                  <div class="col-lg-3 col-md-6 col-sm-4">
+                     <!--Footer Widget Start-->
+                     <div class="footer-widget">
+                        <h6 class="mb-3 text-1000 fw-semi-bold" style="color:green; font-weight: bold;">COMPANY </h6>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">About Us</a></li>
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Team</a></li>
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Careers</a></li>
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Contact</a></li>
+                         </ul>
+                     </div>
+                     <!--Footer Widget End-->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 col-sm-4">
+                     <!--Footer Widget Start-->
+                     <div class="footer-widget">
+                        <h6 class="mb-3 text-1000 fw-semi-bold" style="color:green; font-weight: bold;" >INVEST </h6>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Features</a></li>
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Opportunities</a></li>
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">How it works</a></li>
+                         </ul>
+                     </div>
+                     <!--Footer Widget End-->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 col-sm-4">
+                     <!--Footer Widget Start-->
+                     <div class="footer-widget">
+                        <h6 class="mb-3 text-1000 fw-semi-bold" style="color:green; font-weight: bold;">LEGAL </h6>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Privacy</a></li>
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Terms</a></li>
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Security</a></li>
+                         </ul>
+                     </div>
+                     <!--Footer Widget End-->
+                  </div>
+
+                  <div class="col-lg-3 col-md-6 sm-4">
+                     <div class="card bg-success">
+                       <div class="card-body p-sm-4">
+                         <h5 class="text-white"style="font-size: 16px;">Pauliset Agro Company</h5>
+                         <p class="mb-0 text-white"style="font-size: 13px;">write email to us<span class="text-white fs--1 fs-sm-1">info@paulisetagro.com</span></p>
+                         <!-- <button class="btn btn-light text-success" type="button">
+                           <svg class="bi bi-person me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#76C279" viewBox="0 0 16 16">
+                             <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"></path>
+                           </svg>Sing In
+                         </button> -->
+                       </div>
+                     </div>
+                     <div class="footer-widget mt-3">
+                        <h6 class="mb-3 text-1000 fw-semi-bold" style="color:green; font-weight: bold;">Socials </h6>
+                        <ul class="list-unstyled mb-md-4 mb-lg-0">
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">LinkedIn</a></li>
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Twitter</a></li>
+                           <li class="mb-3"><a class="text-700 text-decoration-none" href="#!">Facebook</a></li>
+                         </ul>
+                     </div>
+                   </div>
+
+               
+                  <div class="col-lg-3 col-md-6 col-sm-4">
+                     <!--Footer Widget Start-->
+                     <div class="footer-widget">
+                        <div id="fpro-slider" class="owl-carousel owl-theme">
+                           <!--Footer Product Start-->
+                           <!-- <div class="item">
+                              <div class="f-product">
+                                 <img src="/static/images/fpro1.jpg" alt="">
+                                 <div class="fp-text">
+                                    <h6><a href="#">Buy T-Shirts</a></h6>
+                                    <strong>$19.00</strong>
+                                 </div>
+                              </div>
+                           </div> -->
+                           <!--Footer Product End-->
+                           <!--Footer Product Start-->
+                           <!-- <div class="item">
+                              <div class="f-product">
+                                 <img src="/static/images/fpro1.jpg" alt="">
+                                 <div class="fp-text">
+                                    <h6><a href="#">Buy T-Shirts</a></h6>
+                                    <strong>$19.00</strong>
+                                 </div>
+                              </div>
+                           </div> -->
+                           <!--Footer Product End-->
+                           <!--Footer Product Start-->
+                           <!-- <div class="item">
+                              <div class="f-product">
+                                 <img src="/static/images/fpro1.jpg" alt="">
+                                 <div class="fp-text">
+                                    <h6><a href="#">Buy T-Shirts</a></h6>
+                                    <strong>$19.00</strong>
+                                 </div>
+                              </div>
+                           </div> -->
+                           <!--Footer Product End-->
+                        </div>
+                     </div>
+                     <!--Footer Widget End-->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyr wf100">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4 col-sm-4"> <img src="/static/images/pauliset-logo.png" alt=""> </div>
+                  <div class="col-md-8 col-sm-8">
+                     <p><a target="_blank" href="https://www.templateshub.net">This website was developed &copy; by Next Technologies</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--Footer End-->
+   </div>
+   <!--   JS Files Start  -->
+   <script src="{% static './js/jquery-3.3.1.min.js' %}"></script>
+   <script src="{% static './js/jquery-migrate-1.4.1.min.js' %}"></script>
+   <script src="{% static './js/popper.min.js' %}"></script>
+   <script src="{% static './js/bootstrap.min.js' %}"></script>
+   <script src="{% static './js/owl.carousel.min.js' %}"></script>
+   <script src="{% static './js/jquery.prettyPhoto.js' %}"></script>
+   <script src="{% static './js/isotope.min.js' %}"></script>
+   <script src="{% static './js/custom.js' %}"></script>
+   {% comment %} <script type="module" src="/static/js/index.js"></script> {% endcomment %}
+</body>
+
+</html>
